@@ -10,7 +10,7 @@ SVG Toolkit allows you to easily export your work to SVG in perfact formatting, 
 
 ## Installation
 
-Install directly from the [Figma Plugin Page](https://www.figma.com/community/plugin/980366185319754464/SVG-Animate)
+Install directly from the [Figma Plugin Page](https://www.figma.com/community/plugin/980340882594944725/SVG-Toolkit)
 
 ## License
 

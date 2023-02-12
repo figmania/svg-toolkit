@@ -1,0 +1,67 @@
+@import "@figmania/ui/build/style.css";
+
+body {
+  font-feature-settings: "liga" on, "calt" on;
+  font: normal 400 11px/16px Inter, sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+  background-color: #2e3440;
+}
+
+#ui {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.icon--export {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZyBpZD0iZjZmNGI4MTJmODU4YWVmYzY0ZTFiMGZkZjYzODI5NGUiPgogICAgPGcgaWQ9IjhmYWI3NTQ1YmQwOWQ5MTVmYjdiMDk5NjIwYzAyYmFlIj4KICAgICAgPHBhdGggZD0iTTEwIDIySDIyVjE0SDIzVjIzSDlWOC45NjUwMUgxOFY5Ljk2NTAxSDEwVjIyWiIgZmlsbD0iYmxhY2siPjwvcGF0aD4KICAgICAgPHBhdGggZD0iTTE1LjMgMTZMMjQuMyA3TDIwIDdWNkgyNlYxMkgyNVY3LjdMMTYgMTYuN0wxNS4zIDE2WiIKICAgICAgZmlsbD0iYmxhY2siPjwvcGF0aD4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPg==);
+}
+
+.icon--clipboard {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZyBpZD0iN2Q3YjQ5ODYyYWEyYzA1Zjc4M2IxZWY3ZWMxNWIyYjQiPgogICAgPGcgaWQ9ImQyZDI5OTZiYmQ3YWQ5YTIzZTc1OTQwNDUxODc2ODUxIj4KICAgICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMCA4QzkuNDQ3NzIgOCA5IDguNDQ3NzIgOSA5VjIzQzkgMjMuNTUyMyA5LjQ0NzcyIDI0IDEwIDI0SDIyQzIyLjU1MjMgMjQgMjMgMjMuNTUyMyAyMyAyM1Y5QzIzIDguNDQ3NzIgMjIuNTUyMyA4IDIyIDhIMjBMMTcgNkgxNUwxMiA4SDEwWk0yMiAyM1Y5SDE5LjY2TDE2LjY2IDdIMTUuMzNMMTIuMzMgOUgxMFYyM0gyMloiCiAgICAgIGZpbGw9ImJsYWNrIj48L3BhdGg+CiAgICAgIDxwYXRoIGQ9Ik0yMCAxM0gxMlYxNEgyMFYxM1oiIGZpbGw9ImJsYWNrIj48L3BhdGg+CiAgICAgIDxwYXRoIGQ9Ik0xOSA4LjVIMjBWMTAuNUMyMCAxMSAyMCAxMSAxOS41IDExSDEyLjVDMTIgMTEgMTIgMTEgMTIgMTAuNVY4LjVIMTNWMTBIMTlWOC41WiIKICAgICAgZmlsbD0iYmxhY2siPjwvcGF0aD4KICAgICAgPHBhdGggZD0iTTIwIDE2SDEyVjE3SDIwVjE2WiIgZmlsbD0iYmxhY2siPjwvcGF0aD4KICAgICAgPHBhdGggZD0iTTIwIDE5SDEyVjIwSDIwVjE5WiIgZmlsbD0iYmxhY2siPjwvcGF0aD4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPg==);
+}
+
+.icon--download {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI0IDIzQzI0IDIzLjU1MjMgMjMuNTUyMyAyNCAyMyAyNEg5QzguNDQ3NzIgMjQgOCAyMy41NTIzIDggMjNDOCAyMi40NDc3IDguNDQ3NzIgMjIgOSAyMkgyM0MyMy41NTIzIDIyIDI0IDIyLjQ0NzcgMjQgMjNaTTE1LjI5MjkgMTkuODMyMUMxNS40ODgyIDIwLjAyNzQgMTUuNzQ0MSAyMC4xMjUgMTYgMjAuMTI1QzE2LjI1NTkgMjAuMTI1IDE2LjUxMTkgMjAuMDI3NCAxNi43MDcxIDE5LjgzMjFMMjAuMjUwMiAxNi4yODkxQzIwLjY0MDcgMTUuODk4NiAyMC42NDA3IDE1LjI2NTQgMjAuMjUwMiAxNC44NzQ5QzE5Ljg1OTYgMTQuNDg0MyAxOS4yMjY1IDE0LjQ4NDMgMTguODM1OSAxNC44NzQ5TDE3IDE2LjcxMDhWOUMxNyA4LjQ0NzcyIDE2LjU1MjMgOCAxNiA4QzE1LjQ0NzcgOCAxNSA4LjQ0NzcyIDE1IDlWMTYuNzEwOEwxMy4xNjQxIDE0Ljg3NDlDMTIuNzczNSAxNC40ODQzIDEyLjE0MDQgMTQuNDg0MyAxMS43NDk4IDE0Ljg3NDlDMTEuMzU5MyAxNS4yNjU0IDExLjM1OTMgMTUuODk4NiAxMS43NDk4IDE2LjI4OTFMMTUuMjkyOSAxOS44MzIxWiIgZmlsbD0iYmxhY2siLz4KPC9zdmc+Cg==);
+}
+
+textarea {
+  opacity: 0;
+  pointer-events: none;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 32px;
+  width: 32px;
+  border: none;
+  overflow: hidden;
+}
+
+.container {
+  overflow: auto;
+  flex: 1;
+}
+
+code.hljs {
+  margin-top: 1px;
+  background-color: #FFFFFF;
+}
+
+.preset-select {
+  width: 160px;
+}
+
+.header > button {
+  margin-left: 4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

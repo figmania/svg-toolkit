@@ -1,0 +1,7 @@
+{
+  "name": "SVG Toolkit",
+  "id": "980340882594944725",
+  "api": "1.0.0",
+  "main": "build/controller.js",
+  "ui": "build/ui.html"
+}

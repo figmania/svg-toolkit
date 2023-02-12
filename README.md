@@ -6,7 +6,7 @@
 
 ![logo](design/toolkit-banner.png "SVG Toolkit")
 
-SVG Toolkit allows you to easily export your work to SVG in perfact formatting, without all the usual rubbish and unneeded clutter.
+SVG Toolkit allows you to easily export your work to SVG in perfect formatting, without all the usual rubbish and unneeded clutter.
 
 ## Installation
 

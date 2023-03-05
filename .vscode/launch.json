@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [{
+    "name": "build",
+    "type": "node",
+    "request": "launch",
+    "program": "${workspaceFolder}/node_modules/.bin/vite",
+    "args": ["build"]
+  }, {
+    "name": "serve",
+    "type": "node",
+    "request": "launch",
+    "program": "${workspaceFolder}/node_modules/.bin/vite"
+  }, {
+    "name": "attach",
+    "type": "chrome",
+    "request": "attach",
+    "address": "localhost",
+    "port": 9222,
+    "urlFilter": "https://www.figma.com/file/${config:figma.document}/*",
+    "targetSelection": "automatic",
+    "pauseForSourceMap": true,
+    "sourceMaps": true,
+    "pathMapping": {
+      "/file/${config:figma.document}/": "${workspaceRoot}/",
+      "/framework/": "/Users/magloft/projects/figmania/framework/",
+      "/src/": "${workspaceRoot}/src",
+    },
+    "internalConsoleOptions": "openOnSessionStart"
+  }]
+}

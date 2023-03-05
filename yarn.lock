@@ -353,17 +353,17 @@
   integrity sha512-to6hFysqZYACz4VNgaBXflOVS+1pbXGNVcezDmQEMcADDkIZeAZ71Zfqf/B2YDRmU3sM1xX5Q5NkRGhjCuLOLg==
 
 "@figmania/common@*":
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@figmania/common/-/common-2.3.1.tgz#2f1e0ed3b147303caaf0abc8ab00dd747ee76f20"
-  integrity sha512-evSYU6n5J5rcw82up3SdVNMBqp0DHCVqxmiFYofXwzRMTuNosclXwyRccq5i/RyTz9UUqUu0dkW7XZjPcKwJeg==
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@figmania/common/-/common-2.3.3.tgz#57904a3ab0d1d49cfa68f068e6eafd958b394159"
+  integrity sha512-hwgz6knHZ7JHb3F/rAAgq7kKFYyfI5jh83ksva6qSdtKsRwUEma/19x7PHONeUQwrg4+PFG00G0GxUrCd9kIhw==
   dependencies:
     debounce "^1.2.1"
     md5 "^2.3.0"
 
 "@figmania/ui@*":
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@figmania/ui/-/ui-2.3.1.tgz#3eebf2cea8c420d078bf41b5f3a85fd840f2e95c"
-  integrity sha512-goHQXtLGiGBkRx7CT/x1CPTIT35sQt4KPBmxlBTap4wzSp1pGY/5ZT8uDbaZcXSGP7LiqVpOMWJ6J07ZiXvKXg==
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@figmania/ui/-/ui-2.3.3.tgz#b5138f0c7bb90b8afb7affe7910a0341e9f9351f"
+  integrity sha512-bzm7NyRetPq6uYdgQFhN/4OtEa2mAmYQIikDowzsZ03xp3KMYARP4MPab5Q0VSvl+RkumBsIh8E7xTsliW9OHA==
   dependencies:
     clsx "^1.2.1"
     highlight.js "^11.7.0"

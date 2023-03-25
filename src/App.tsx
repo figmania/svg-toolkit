@@ -47,11 +47,11 @@ export const App: FunctionComponent = () => {
     })
   }, [node])
 
-  if (!node) { return <Navbar icon={ICON.UI_INFO} title='No node selected' disabled /> }
+  if (!node) { return <Navbar icon={ICON.SYMBOL_COMPONENT} title='No node selected' disabled /> }
 
   return (
     <>
-      <Navbar icon={ICON.UI_INSTANCE} title={node.name}>
+      <Navbar icon={ICON.SYMBOL_COMPONENT} title={node.name}>
         <Select className={styles['preset-select']} placeholder="Export Preset" value={currentPreset} options={EXPORT_PRESET_SELECT_OPTIONS} onChange={(option) => {
           const { state: { css, encoding }, value } = option as ExportPresetOption
           currentPreset = value
@@ -72,7 +72,7 @@ export const App: FunctionComponent = () => {
             uiDownload(formattedCode, { type: 'text/plain', filename: `${node.name}.txt` })
           }
         }} />
-        <Button icon={config.preview ? ICON.UI_VISIBLE : ICON.UI_HIDDEN} selected={config.preview} onClick={() => {
+        <Button icon={config.preview ? ICON.CONTROL_SHOW : ICON.CONTROL_HIDE} selected={config.preview} onClick={() => {
           saveConfig({ preview: !config.preview })
         }} />
       </Navbar>

@@ -1,13 +1,16 @@
-import { ClipboardProvider, ControllerProvider, PluginUI } from '@figmania/ui'
+import { createController, createUIDelegate } from '@figmania/common'
+import { ClipboardProvider, FigmaProvider, PluginUI } from '@figmania/ui'
 import { createRoot } from 'react-dom/client'
 import { App } from './App'
 
+const controller = createController(createUIDelegate())
+
 createRoot(document.getElementById('root')!).render(
-  <ControllerProvider>
+  <FigmaProvider controller={controller}>
     <ClipboardProvider>
-      <PluginUI className='theme-container' theme='dark' minSize={{ width: 274, height: 40 }}>
+      <PluginUI className='theme-container' theme='midnight' minSize={{ width: 300, height: 40 }}>
         <App />
       </PluginUI>
     </ClipboardProvider>
-  </ControllerProvider>
+  </FigmaProvider>
 )
